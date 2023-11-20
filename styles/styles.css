@@ -136,6 +136,16 @@ thead {
         align-items: flex-start;
     }
 
+    .nav-buttons {
+        margin-top: 1rem; /* Add margin for spacing */
+        flex-direction: column;
+    }
+
+    .nav-buttons li {
+        margin-right: 0; /* Remove right margin for stacked items */
+        margin-bottom: 0.5rem; /* Add bottom margin for stacked items */
+    }
+
     main {
         margin: 1rem;
     }
