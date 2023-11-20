@@ -132,7 +132,8 @@ thead {
     }
 
     header {
-        margin: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     main {
