@@ -129,7 +129,9 @@ thead {
 
     /* For example: */
     body {
-        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+        font-size: 14px;
+        margin: 10%;
+        padding: 0;
     }
 
     /* Add more styles as needed for small screens */
