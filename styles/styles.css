@@ -28,12 +28,12 @@ header {
 main {
     justify-content: center;
     max-width: 50rem;
-    margin-left: 10%;
+    margin: auto;
 }
 
 footer {
     background: var(--secondary);
-    padding-left:
+    justify-content: center;
 }
 
 /* Specific Styling*/
@@ -42,7 +42,7 @@ a {
     color: var(--accent);
     text-decoration: none;
     transition: .5s;
-   }
+}
 
 a:hover {
     font-size: 110%;
@@ -63,8 +63,8 @@ table {
 }
   
 td {
-      border: 0.0125rem solid;
-      padding: 0.5rem;
+    border: 0.0125rem solid;
+    padding: 0.5rem;
 }
   
 thead {
@@ -91,6 +91,10 @@ thead {
     height: 10%;
 }
 
+.main-text {
+    padding: auto;
+}
+
 /*ID Styling*/
 
 #nav-buttons {
@@ -109,11 +113,24 @@ thead {
 #talson-photo {
     max-height: 30rem;
     border-radius: 2rem;
-    
+    margin: 2rem;
 }
 
 #nav-logo {
     height: 10rem;
     padding: 1rem;
     margin: 1rem;
+}
+
+/* Small devices*/
+
+@media only screen and (max-width: 480px) {
+    /* Add your specific styles for iPhone screens here */
+
+    /* For example: */
+    body {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+
+    /* Add more styles as needed for small screens */
 }
