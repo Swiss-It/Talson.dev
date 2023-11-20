@@ -1,0 +1,119 @@
+/*styles.css*/
+:root {
+    --background: #EBEBEB;
+    --text: #242424;
+    --secondary: #CDCDCD;
+    --accent: #00A863;
+    --font-family: 'Inter', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/*General Styling for Elements*/
+body {
+    font-family: var(--font-family);
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    justify-content: center;
+    max-width: 50rem;
+    margin-left: 10%;
+}
+
+footer {
+    background: var(--secondary);
+    padding-left:
+}
+
+/* Specific Styling*/
+
+a {
+    color: var(--accent);
+    text-decoration: none;
+    transition: .5s;
+   }
+
+a:hover {
+    font-size: 110%;
+}
+
+h1,h2,h3 {
+    margin-left: 1rem;
+}
+
+li {
+    padding: 0.5rem;
+    align-items: center;
+}
+
+table {
+    border: 0.0125rem solid #333;
+    margin: 1rem;
+}
+  
+td {
+      border: 0.0125rem solid;
+      padding: 0.5rem;
+}
+  
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+/*Class Styling*/
+
+.flex-horizontal {
+    display: flex;
+}
+
+.nav-title {
+    display: flex;
+}
+
+.nav-buttons {
+    margin-top: 4rem;
+}
+
+.about-me {
+    display: flex;
+    height: 10%;
+}
+
+/*ID Styling*/
+
+#nav-buttons {
+    list-style-type: none;
+    display: flex
+}
+
+#brand:hover {
+    background: linear-gradient(120deg,var(--text),var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Inter', bold;
+    font-weight: 900;
+}
+
+#talson-photo {
+    max-height: 30rem;
+    border-radius: 2rem;
+    
+}
+
+#nav-logo {
+    height: 10rem;
+    padding: 1rem;
+    margin: 1rem;
+}
