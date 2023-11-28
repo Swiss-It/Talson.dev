@@ -4,7 +4,7 @@
     --text: #242424;
     --secondary: #CDCDCD;
     --accent: #00A863;
-    --font-family: 'Inter', sans-serif;
+    --font-family: 'Poppins', sans-serif;
 }
 
 html{
@@ -32,8 +32,9 @@ main {
 }
 
 footer {
-    background: var(--secondary);
-    justify-content: center;
+    margin-top: 4rem;
+    background: rgb(246, 246, 246);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 /* Specific Styling*/
@@ -42,10 +43,7 @@ a {
     color: var(--accent);
     text-decoration: none;
     transition: .5s;
-}
-
-a:hover {
-    font-size: 110%;
+    padding: 5px;
 }
 
 h2,h3 {
@@ -63,27 +61,36 @@ h3 {
 li {
     padding: 0.5rem;
     align-items: center;
+    transition: 0.5s;
 }
 
-table {
-    border: 0.0125rem solid #333;
-    margin: 1rem;
+.nav-buttons li:hover {
+    transform:scale(1.2);
 }
-  
+ 
 td {
-    border: 0.0125rem solid;
+    border-radius: 0.5rem;
+    min-width: 10rem; 
     padding: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
   
 thead {
-    background-color: #333;
-    color: #fff;
+    border-radius: 1rem;
+    color: var(--text);
+}
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
 }
 
 /*Class Styling*/
 
 .flex-horizontal {
     display: flex;
+    align-items: center;
 }
 
 .nav-title {
@@ -91,7 +98,7 @@ thead {
 }
 
 .nav-buttons {
-    margin-top: 4rem;
+    justify-content: space-between;
 }
 
 .about-me {
@@ -103,9 +110,45 @@ thead {
     padding: auto;
 }
 
-.footer-btn:hover {
+.link-btn {
+    color: var(--text);
+}
+
+.link-btn:hover {
     font-size: 100%;
-    color: black;
+    color: var(--accent);
+}
+
+.table {
+    justify-content: center;
+    display: flex;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.25rem;
+}
+
+.btt-flex {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+}
+
+.like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.even {
+    color: var(--text);
+}
+
+.odd {
+    color: var(--accent);
 }
 
 /*ID Styling*/
@@ -115,12 +158,19 @@ thead {
     display: flex
 }
 
+#brand {
+    font-weight: 600;
+    border-radius: 0.25rem;
+    transition: 0.5s;
+}
+
 #brand:hover {
-    background: linear-gradient(120deg,var(--text),var(--accent));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Inter', bold;
-    font-weight: 900;
+    background-color: var(--text) ;
+    color: var(--background);
+    border-radius: 0.25rem;
+    padding: 5px;
+    font-weight: 600;
+    box-shadow: var(--text) 0px 0px 0px 2px inset, rgb(255, 217, 19) 3px -3px, rgb(255, 156, 85) 6px -6px, rgb(255, 42, 42) 9px -9px, rgb(196, 1, 255) 12px -12px, blue 15px -15px;
 }
 
 #talson-photo {
@@ -139,6 +189,52 @@ thead {
     margin: 1rem;
 }
 
+#instagram-id {
+    transition: 0.5s;
+}
+
+#instagram-id:hover {
+    color: var(--accent);
+}
+
+#copyright {
+    padding: 1rem;
+    font-weight: 600;
+    text-shadow: grey 0.25rem 0.25rem 0.5rem;
+}
+
+#btt {
+    justify-content: center;
+    align-items: center;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+    border-radius: 1rem;
+}
+
+#btt:hover {
+    border-radius: 0.5rem;
+    background-color: #242424;
+    padding: 0.75rem;
+    font-weight: 600;
+}
+
+#txt-counter {
+    padding: 0.5rem;
+    font-weight: 600;
+}
+
+#btn-counter {
+    padding: 0.25rem;
+    transition: 0.5s;
+    border-radius: 1rem;
+}
+
+#btn-counter:hover {
+    background-color: var(--secondary);
+    border-radius: 1rem;   
+}
+
 /*Responsive Styles*/
 
 @media only screen and (max-width: 767px) {
@@ -150,18 +246,18 @@ thead {
 
     header {
         flex-direction: column;
-        align-items: flex-start; /* Change alignment for stacked layout */
+        align-items: flex-start;
     }
 
     .nav-buttons {
-        margin-top: 1rem; /* Add margin for spacing */
+        margin-top: 1rem;
         flex-direction: column;
-        align-items: flex-start; /* Align items vertically */
+        align-items: flex-start;
     }
 
     .nav-buttons li {
-        margin-right: 0; /* Remove right margin for stacked items */
-        margin-bottom: 0.5rem; /* Add bottom margin for stacked items */
+        margin-right: 0;
+        margin-bottom: 0.5rem;
     }
 
     main {

@@ -6,15 +6,14 @@
     <link  href="./styles/styles.css" rel="stylesheet">
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
-    <!--<script src="./scripts/script.js">
-       
-    </script>-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="./scripts/script.js"></script>
     <title>TALSON Portfolio</title>
 </head>
 
 <body>
 <header>
-    <nav>
+    <nav id="top">
         <div class="flex-horizontal">
             <div class="nav-title">
                 <img id="nav-logo" src="./images/Talson-Web-Logo.webp" alt="TALSON Logo">
@@ -26,7 +25,7 @@
                     <li><a href="#hobbies">Hobbies</a></li>
                     <li><a href="#goal">Goals</a></li>
                     <li>|</li>
-                    <li><a span id="brand" href="brand-en.html"><span>Brand</span></a></li>
+                    <li><button><a id="brand">Brand</a></button></li>
                 </ul>
             </div>
         </div>
@@ -65,7 +64,7 @@
                 <p>I want to be a great front end developer known for connecting with people to find designs and create new technologies to improve commuincation in our highly connected future.</p>
     </div>
 <!--Table-->
-    <div>
+    <div class="table">
         <table>
             <thead>
             <tr>
@@ -74,20 +73,37 @@
             </thead>
             <tbody>
             <tr>
-                <td>@probably_talson</td>
-                <td><a href='mailt&#111;&#58;%6E&#101;&#117;f&#101;ld&#46;%7&#52;&#97;ls&#111;%&#54;E&#37;40&#103;ma%69l&#46;co&#109;'>neuf&#101;ld&#46;t&#97;&#108;so&#110;&#64;gmail&#46;&#99;om</a></td>
+                <td id="instagram-id">Instagram</td>
+                <td><a class="link-btn" href='mailt&#111;&#58;%6E&#101;&#117;f&#101;ld&#46;%7&#52;&#97;ls&#111;%&#54;E&#37;40&#103;ma%69l&#46;co&#109;'>neuf&#101;ld&#46;t&#97;&#108;so&#110;&#64;gmail&#46;&#99;om</a></td>
             </tr>
             </tbody>
         </table>
     </div>
+
+<!--Like Button-->
+    <div class="like">
+        <button>
+            <span class="material-symbols-outlined" id="btn-counter">
+            thumb_up
+            </span>
+        </button>
+        <p class="odd" id="txt-counter">1</p>
+    </div>
+<!--Ordered list-->
+    <div>
+        <ol id="numbers">
+        </ol>
+    </div>
 </main>
 <!--Copyright + Home Nav-->
 <footer>
-    <p>TALSON&copy; 2023</p>
-    <a class="footer-btn" href="https://www.realtimecolors.com">Awesome color and font testing site</a>
-    <a class="footer-btn" href="https://dribbble.com/">Design inspiration catalogue</a>
-<div>
-    <a href="#nav-buttons">Back to top</a>
+    <div class="footer">
+        <p id="copyright">TALSON&copy; <span id="footer-date"></span></p>
+        <a class="link-btn" href="https://www.realtimecolors.com">Awesome color and font testing site</a>
+        <a class="link-btn" href="https://dribbble.com/">Design inspiration catalogue</a>
+    </div>
+<div class="btt-flex">
+    <a id="btt" href="#top">Back to top</a>
 </div>
 </footer>
 </body>
