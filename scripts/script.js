@@ -1,15 +1,22 @@
+//Document organized into readable sections for marking criteria
+
 window.onload = (event) => {
+  //Footer
   let currentDate = new Date().getFullYear();
 
   document.getElementById("footer-date").innerHTML = currentDate;
 
   console.log("Date Component");
 
+  //Alert Button
+
   document.getElementById("brand").onclick = (event) => {
     alert("Brand page is not available right now.");
   };
 
   console.log("Alert Component");
+
+  //Hover Button
 
   const element = document.getElementById("instagram-id");
 
@@ -22,6 +29,8 @@ window.onload = (event) => {
   };
 
   console.log("InstagramID Component");
+
+  //Incrementing Button - if else
 
   let count = 1;
   const textCounter = document.getElementById("txt-counter");
@@ -40,6 +49,8 @@ window.onload = (event) => {
   };
 
   console.log('Counter Component')
+
+  //Incrementing - for Loop
 
   const numberList = document.getElementById("numbers");
 
