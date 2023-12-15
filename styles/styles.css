@@ -25,6 +25,11 @@ header {
     align-items: center;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 main {
     justify-content: center;
     max-width: 50rem;
@@ -88,12 +93,6 @@ button {
 }
 
 /*Class Styling*/
-
-.flex-horizontal {
-    display: flex;
-    align-items: center;
-}
-
 .nav-title {
     display: flex;
 }
@@ -142,14 +141,6 @@ button {
     align-items: center;
     justify-content: center;
     padding: 1rem;
-}
-
-.even {
-    color: var(--text);
-}
-
-.odd {
-    color: var(--accent);
 }
 
 /*ID Styling*/
@@ -206,9 +197,11 @@ button {
 }
 
 #btt {
+    display: flex;
     justify-content: center;
     align-items: center;
     padding: 0.75rem;
+    margin: auto;
     margin-top: 1rem;
     transition: 0.5s;
     border-radius: 1rem;
@@ -240,7 +233,10 @@ button {
 /*Responsive Styles*/
 
 @media only screen and (max-width: 767px) {
+
     body {
+        display: flex;
+        flex-direction: column;
         font-size: 14px;
         margin: 0;
         padding: 0;
@@ -249,22 +245,38 @@ button {
     header {
         flex-direction: column;
         align-items: flex-start;
+        margin: auto;
     }
 
-    .nav-buttons {
-        margin-top: 1rem;
+    nav {
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .nav-buttons li {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
     }
 
     main {
         margin: 1rem;
     }
+
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* .nav-buttons {
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    } */
+
+    /* .nav-buttons li {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    } */
 
     .about-me {
         display: flex;
