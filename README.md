@@ -1,2 +1,2 @@
-# Talson-Neufeld---IDD-Projects
-Repo for all my SAIT IDD Web Projects
+# Talson.dev --- Portfolio Site for all my projects
+All hosted projects available @ talson.dev
