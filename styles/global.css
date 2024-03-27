@@ -1,0 +1,52 @@
+/*global.css*/
+:root {
+    --background: #EBEBEB;
+    --text: #242424;
+    --secondary: #CDCDCD;
+    --accent: #00A863;
+    --font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Semantic Styling*/
+body {
+    font-family: var(--font-family);
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00A863;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    justify-content: center;
+    max-width: 50rem;
+    margin: auto;
+}
+
+footer {
+    margin-top: 4rem;
+    background: rgb(246, 246, 246);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/*Element Styling*/
+
+
+/*Class Styling*/
+
+
+/*ID Styling*/
+
+
