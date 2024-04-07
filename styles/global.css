@@ -11,32 +11,53 @@ html{
     scroll-behavior: smooth;
 }
 
-/*Semantic Styling*/
+/*General Styling*/
 body {
-    font-family: var(--font-family);
     background-color: var(--background);
-    color: var(--text);
     margin: 0;
     padding: 0;
 }
 
+/* p {
+
+} */
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+
+} */
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+/*Semantic Styling*/
+
 header {
-    background-color: #00A863;
+    background-color: var(--text);
 }
 
 nav {
-    display: flex;
-    align-items: center;
+
 }
 
 main {
-    justify-content: center;
-    max-width: 50rem;
-    margin: auto;
+
 }
 
 footer {
-    margin-top: 4rem;
     background: rgb(246, 246, 246);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -46,7 +67,28 @@ footer {
 
 /*Class Styling*/
 
+    /* Nav Styling*/
 
-/*ID Styling*/
+    .conn-container {
+        
+
+    }
+
+    .conn-left {
+        
+    }
+
+    .conn-right {
+
+    }
+
+
+    /*ID Styling*/
+
+    #nav-logo {
+        max-width: 10vw;
+        width: auto;
+    }
+
 
 

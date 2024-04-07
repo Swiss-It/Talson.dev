@@ -1,6 +1,6 @@
 //Document organized into readable sections for marking criteria
 
-window.onload = () => {
+/* window.onload = () => {
   //Footer
   const currentDate = new Date().getFullYear();
   document.getElementById("footer-date").innerHTML = currentDate;
@@ -24,4 +24,4 @@ window.onload = () => {
     element.innerText = "Instagram";
   };
   console.log("InstagramID Component");
-};
+}; */

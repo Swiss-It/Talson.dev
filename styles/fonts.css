@@ -1,0 +1,12 @@
+/* fonts.css */
+
+/* General */
+
+body {
+    font-family: var(--font-family);
+    color: var(--background);
+}
+
+.w {
+    color: var(--background);
+}

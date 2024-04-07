@@ -1,1 +1,87 @@
 /* layout.css */
+
+/* Grid Layout */
+
+/* Flex Layout */
+
+    /* General */
+
+    /* Semantic */
+
+    header {
+        display: flex;
+        flex-flow: column;
+        position: fixed;
+        width: 100vw;
+    }
+
+    nav {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    main {
+        justify-content: center;
+        max-width: 50rem;
+        margin: auto;
+    }
+
+    footer {
+        margin-top: 4rem;
+    }
+
+    /* Elements */
+
+    /* Classes */
+
+    .conn-container {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: .5rem;
+
+    }
+
+    .conn-left {
+        margin: 1rem;
+    }
+
+    .conn-right {
+        display: flex;
+    }
+
+    .nav-buttons {
+
+    }
+
+    /* IDs */
+
+    #nav-buttons {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-evenly;
+        padding: 40px;
+    }
+
+/* Responsive Queries*/
+
+    /*Tablet*/
+
+    @media screen {
+        /* Classes */
+
+        /* IDs */
+    }
+
+
+    /*Desktop*/
+
+    @media screen {
+        /* Classes */
+
+        /* IDs */
+    }
+
+
