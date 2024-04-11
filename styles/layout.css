@@ -2,9 +2,24 @@
 
 /* Grid Layout */
 
+
+
 /* Flex Layout */
 
     /* General */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+
+    ul {
+        padding: 0;
+    }
 
     /* Semantic */
 
@@ -28,7 +43,7 @@
     }
 
     footer {
-        margin-top: 4rem;
+        display: flex;
     }
 
     /* Elements */
@@ -44,26 +59,40 @@
 
     }
 
-    .conn-left {
-        margin: 1rem;
-    }
-
-    .conn-right {
-        display: flex;
+    .material-symbols-outlined {
+        padding-right: .25rem;
+        cursor: default;
     }
 
     .nav-buttons {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
 
     }
 
     /* IDs */
 
+    #conn-left {
+        display: flex;
+    }
+
+    #conn-right {
+        display: flex;
+    }
+
     #nav-buttons {
         display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-        padding: 40px;
+        align-items: center;
+        justify-content:space-around;
+        gap: 20px;
     }
+
+    #talson-photo {
+        max-height: 100px;
+    }
+/* ------------------------------------------------ */
+
 
 /* Responsive Queries*/
 
@@ -82,6 +111,16 @@
         /* Classes */
 
         /* IDs */
+    }
+
+    /* Tiny */
+
+    @media screen {
+
+        /* Classes */
+
+        /* IDs */
+        
     }
 
 

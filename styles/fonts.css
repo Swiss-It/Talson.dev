@@ -4,9 +4,17 @@
 
 body {
     font-family: var(--font-family);
-    color: var(--background);
+    color: var(--text);
+    font-size: .9rem;
 }
 
-.w {
-    color: var(--background);
+a {
+    color: var(--text);
 }
+
+/* Media Quieries */
+
+    /* Desktop */
+    @media screen {
+        
+    }
