@@ -5,6 +5,12 @@
   const currentDate = new Date().getFullYear();
   document.getElementById("footer-date").innerHTML = currentDate;
   console.log("Date Component");
+  
+  // Get the current year
+    const currentYear = new Date().getFullYear();
+
+    // Set the current year in the copyright year element
+    document.getElementById('copyright-year').textContent = currentYear;
 
   //Alert Button
 

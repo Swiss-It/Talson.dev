@@ -1,11 +1,12 @@
 /*global.css*/
 :root {
-    --text: #f0f0f0;
-    --background: #171717;
-    --primary: #e9e9e9;
-    --secondary: #2fff9d;
-    --accent: #7f7f7f;
-    --font-family: 'Poppins', sans-serif;
+    --text: #ffffff;
+    --background: #0a0a0a;
+    --primary: #111111;
+    --secondary: #00A863;
+    --accent: #3e3e3e;
+    --font-main: 'Poppins', sans-serif;
+    --font-secondary: ;
 }
 
 html{
@@ -14,9 +15,9 @@ html{
 
 /*General Styling*/
 body {
-    background-color: var(--background);
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1295275/background-noise.png)  var(--background);
 }
 
 /* h1,
@@ -43,7 +44,9 @@ a {
 /*Semantic Styling*/
 
 header {
-    background-color: rgb(6, 6, 6);
+    background-color: var(--primary);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 
 footer {
@@ -62,21 +65,30 @@ footer {
         cursor: default;
     }
 
-    .conn-left {
-        transition: 1s;
+    /*Hero Styling*/
+
+    .talson-img {
+        border-radius: 6.5rem;
     }
 
-    .conn-right {
-        transition: 1s;
+    /* Card Styling*/
+
+    .card-item {
+        background-color: var(--accent);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
+    }
+
+    .card-img {
+        padding-top: 10px;
     }
 
 
-    /*ID Styling*/
+ /*ID Styling*/
 
-    #nav-logo {
-        max-width: 10vw;
-        width: auto;
-    }
-
-
+#main-img {
+    border-radius: 20px;
+    height: 300px;
+    width: auto;
+}
 
