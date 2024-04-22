@@ -1,5 +1,8 @@
 /* layout.css */
 
+/*Spacing, Margins, Padding, Display, and Responsive styling w/ Media Queries*/
+/*Initial is Mobile Responsive(≤745px)*/
+
 /* Grid Layout */
 
 
@@ -17,6 +20,10 @@
         margin: 0;
     }
 
+    p {
+        margin: 1rem;
+    }
+
     ul {
         padding: 2rem;
     }
@@ -26,20 +33,20 @@
     header {
         display: flex;
         flex-flow: column;
-        position: fixed;
-        width: 100vw;
+        width: 100%;
     }
 
     nav {
+        margin-top: 4rem;
         display: flex;
         flex-flow: column;
         align-items: center;
+        transition: 1s;
     }
 
     main {
-        justify-content: center;
-        max-width: 50rem;
-        margin: auto;
+        padding: 1rem;
+
     }
 
     footer {
@@ -55,11 +62,16 @@
 
     /* Classes */
 
-    .conn-container {
+    /*HEADER*/
+
+    .fixed-container {
+        position: fixed;
+        width: 100%;
         display: flex;
         flex-flow: row;
         justify-content: space-between;
         align-items: center;
+        
         padding: .5rem;
 
     }
@@ -76,13 +88,14 @@
 
     }
 
+    /*HERO*/
+
     .hero-container {
-        padding-top: 35vh;
+        margin-top: 5rem;
+        height: 80vh;
         display: flex;
         flex-flow: column;
         align-items: center;
-        padding-left: 3rem;
-        padding-right: 3rem;
     }
 
     .hero-content {
@@ -94,22 +107,30 @@
         width: 13rem;
     }
 
-
+    /*MAIN*/
 
     .main-container {
-        margin-top: 5rem;
+        padding: 2rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
     }
+
+    /*CARDS*/
 
     .card-container {
         display: flex;
         flex-flow: column;
         align-items: center;
+        width: 100%;
     }
 
     .card-item {
-        margin: 30px;
-        padding: 50px;
-        width: 60%;
+        margin: 1rem;
+        padding: 2rem;
+        width: 90%;
     }
 
     .card-content {
@@ -119,17 +140,31 @@
 
     /* IDs */
 
-    #conn-left {
+    #fixed-left {
         display: flex;
         align-items: center;
     }
 
-    #conn-right {
+    #fixed-right-mobile {
         display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    #github {
+        height: 38px;
+    }
+
+    #linkedin {
+        height: 38px;
+    }
+
+    #dribbble {
+        height: 38px;
     }
 
     #nav-logo {
-        max-width: 10vh;
+        max-width: 9vh;
         width: auto;
     }
 
@@ -140,7 +175,11 @@
         gap: 20px;
     }
 
-/* ------------------------------------------------ */
+/* Responsive Reset*/
+
+.desktop {
+    display: none;
+}
 
 
 /* Responsive Queries*/
@@ -156,10 +195,33 @@
 
     /*Desktop*/
 
-    @media screen {
+    @media only screen and (min-width: 1200px) {
+
+        br {
+            display: none;
+        }
+
         /* Classes */
 
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+
         /* IDs */
+
+        #fixed-right-mobile {
+            display: none;
+        }
+
+        #fixed-right-desktop {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
     }
 
     /* Tiny */

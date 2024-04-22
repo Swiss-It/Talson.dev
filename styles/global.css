@@ -20,6 +20,10 @@ body {
     background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1295275/background-noise.png)  var(--background);
 }
 
+body.brands {
+    background: linear-gradient(0deg, var(--background) 0%, var(--secondary) 100%);
+}
+
 /* h1,
 h2,
 h3,
@@ -43,6 +47,10 @@ a {
 
 /*Semantic Styling*/
 
+div {
+    cursor: default;
+}
+
 header {
     background-color: var(--primary);
     border-bottom-left-radius: 50px;
@@ -59,19 +67,27 @@ footer {
 
 /*Class Styling*/
 
-    /* Nav Styling*/
+    /* NAV*/
 
-    .default {
-        cursor: default;
+    .fixed-container {
+        background-color: var(--primary);
     }
 
-    /*Hero Styling*/
+    /*HERO*/
 
     .talson-img {
         border-radius: 6.5rem;
     }
 
-    /* Card Styling*/
+    /*MAIN*/
+
+    .main-container {
+        background-color: var(--primary);
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
+    }
+
+    /* CARD*/
 
     .card-item {
         background-color: var(--accent);
