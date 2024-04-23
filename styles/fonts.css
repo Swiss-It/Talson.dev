@@ -7,18 +7,21 @@
 body {
     font-family: var(--font-main);
     color: var(--text);
-    font-size: .8rem;
 }
 
 h1,
 h2,
-h3,
 h4,
 h5,
 h6 {
     font-size: 280%;
     color: var(--text);
     text-align: center;
+}
+
+h3 {
+    font-size: 200%;
+    color: var(--text);
 }
 
 p {
@@ -33,14 +36,18 @@ a {
 
 /*Class Styling*/
 
+.icon {
+    font-size: 200%;
+}
+
 /*ID Styling*/
 
 #email-btn {
-    font-size: 110%;
+    font-size: 18px;
 }
 
 #fixed-right-mobile {
-    font-size: 28px;
+    font-size: 18px;
 }
 
 #dribbble {
@@ -51,6 +58,14 @@ a {
 /* Media Quieries */
 
     /* Desktop */
-    @media screen {
+    @media only screen and (min-width: 1200px) {
+
+        #email-btn {
+            font-size: 24px;   
+        }
+
+        #fixed-right-desktop {
+            font-size: 18px;
+        }
         
     }

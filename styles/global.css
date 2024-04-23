@@ -58,7 +58,7 @@ header {
 }
 
 footer {
-    background: rgb(246, 246, 246);
+    background: var(--accent);
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
@@ -83,27 +83,46 @@ footer {
 
     .main-container {
         background-color: var(--primary);
-        border-radius: 20px;
+        border-radius: 1.5rem;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
+    }
+
+    /*ACCORDION*/
+
+    .accordion {
+        border: 1px solid var(--primary);
+        border-radius: 1rem;
+      }
+      
+    .accordion-item {
+        border-bottom: 1px solid var(--primary);
+        border-radius: 1rem;
+        background-color: var(--primary);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
+    }
+
+    .accordion-title {
+        cursor: pointer;
+        background-color: var(--accent);
     }
 
     /* CARD*/
 
     .card-item {
         background-color: var(--accent);
-        border-radius: 20px;
+        border-radius: 1.5rem;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
     }
-
-    .card-img {
-        padding-top: 10px;
-    }
-
 
  /*ID Styling*/
 
 #main-img {
     border-radius: 20px;
+    height: 300px;
+    width: auto;
+}
+
+#EIA-img {
     height: 300px;
     width: auto;
 }

@@ -50,7 +50,27 @@
     }
 
     footer {
+        width: 100%;
         display: flex;
+        flex-flow: column;
+    }
+
+    section {
+        margin: 12rem 0;
+    }
+
+    aside {
+        padding: 2rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    figure {
+        margin: 4rem 0;
+        text-align: center;
     }
 
     /* Elements */
@@ -92,7 +112,6 @@
 
     .hero-container {
         margin-top: 5rem;
-        height: 80vh;
         display: flex;
         flex-flow: column;
         align-items: center;
@@ -110,12 +129,42 @@
     /*MAIN*/
 
     .main-container {
-        padding: 2rem;
+        padding: 2rem 0;
+    }
+
+    .youtube-video {
+        aspect-ratio: 16/9;
+        width: 90%;
+    }
+
+    /*ACCORDION*/
+          
+    .accordion-title {
         display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: start;
-        gap: 1rem;
+        padding: 1rem;
+        position: relative;
+        transition: background-color 0.5s;
+    }
+    
+    .icon {
+        position: absolute;
+        right: 10px;
+        transition: transform 0.5s;
+    }
+    
+    .accordion-content {
+        padding: 10px;
+        display: none;
+        transition: max-height 0.5s;
+        overflow: hidden;
+        text-align: left;
+        max-height: 0;
+    }
+    
+    .accordion-content.show {
+        display: block;
+        text-align: left;
+        max-height: 1000px;
     }
 
     /*CARDS*/
@@ -137,6 +186,10 @@
         padding-top: 20px;
     }
 
+    .card-img {
+        padding-top: 10px;
+    }
+
 
     /* IDs */
 
@@ -151,28 +204,25 @@
         gap: 10px;
     }
 
+    #nav-buttons {
+        gap: 20px;
+    }
+
     #github {
-        height: 38px;
+        height: 28px;
     }
 
     #linkedin {
-        height: 38px;
+        height: 28px;
     }
 
     #dribbble {
-        height: 38px;
+        height: 28px;
     }
 
     #nav-logo {
         max-width: 9vh;
         width: auto;
-    }
-
-    #nav-buttons {
-        display: flex;
-        align-items: center;
-        justify-content:space-around;
-        gap: 20px;
     }
 
 /* Responsive Reset*/
@@ -197,6 +247,11 @@
 
     @media only screen and (min-width: 1200px) {
 
+        main {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
         br {
             display: none;
         }
@@ -211,6 +266,25 @@
             display: block;
         }
 
+        /*CARDS*/
+
+    .card-container {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card-item {
+        margin: 1rem;
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .card-content {
+        padding-top: 20px;
+    }
+
         /* IDs */
 
         #fixed-right-mobile {
@@ -219,6 +293,7 @@
 
         #fixed-right-desktop {
             display: flex;
+            align-items: center;
             justify-content: space-evenly;
             gap: 10px;
         }

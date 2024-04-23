@@ -1,33 +1,40 @@
-//Document organized into readable sections for marking criteria
+/*script.js*/
 
-/* window.onload = () => {
-  //Footer
-  const currentDate = new Date().getFullYear();
-  document.getElementById("footer-date").innerHTML = currentDate;
-  console.log("Date Component");
-  
+window.onload = function() {
   // Get the current year
-    const currentYear = new Date().getFullYear();
+  const currentYear = new Date().getFullYear();
 
-    // Set the current year in the copyright year element
-    document.getElementById('copyright-year').textContent = currentYear;
+  document.getElementById('copyright-year').textContent = currentYear;  
 
-  //Alert Button
+};
 
-  document.getElementById("brand").addEventListener("click", () => {
-    alert("Brand page is not available right now.");
+//Dynamic content features
+document.addEventListener('DOMContentLoaded', function () {
+
+  //Accordion
+  const accordionItems = document.querySelectorAll('.accordion-item');
+
+  accordionItems.forEach(item => {
+    const title = item.querySelector('.accordion-title');
+    const content = item.querySelector('.accordion-content');
+    const icon = title.querySelector('.icon');
+
+    title.addEventListener('click', () => {
+      content.classList.toggle('show');
+      icon.textContent = content.classList.contains('show') ? '-' : '+';
+    });
   });
-  console.log("Alert Component");
 
-  //Hover Button
+  //Alert
+  const link = document.getElementById('alert');
 
-  const element = document.getElementById("instagram-id");
 
-  element.onmouseover = () => {
-    element.innerText = "@probably_talson";
-  };
-  element.onmouseleave = () => {
-    element.innerText = "Instagram";
-  };
-  console.log("InstagramID Component");
-}; */
+  link.addEventListener('click', function(event) {
+
+      event.preventDefault();
+      
+      alert('This page is not ready yet, shoooo');
+  });
+});
+
+
