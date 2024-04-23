@@ -1,0 +1,129 @@
+/*global.css*/
+:root {
+    --text: #ffffff;
+    --background: #0a0a0a;
+    --primary: #111111;
+    --secondary: #00A863;
+    --accent: #3e3e3e;
+    --font-main: 'Poppins', sans-serif;
+    --font-secondary: ;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*General Styling*/
+body {
+    width: 100%;
+    height: 100%;
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1295275/background-noise.png)  var(--background);
+}
+
+body.brands {
+    background: linear-gradient(0deg, var(--background) 0%, var(--secondary) 100%);
+}
+
+/* h1,
+h2,
+h3,
+h4,
+h5 {
+
+} */
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #242424;
+}
+
+/*Semantic Styling*/
+
+div {
+    cursor: default;
+}
+
+header {
+    background-color: var(--primary);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+footer {
+    background: var(--accent);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/*Element Styling*/
+
+
+/*Class Styling*/
+
+    /* NAV*/
+
+    .fixed-container {
+        background-color: var(--primary);
+    }
+
+    /*HERO*/
+
+    .talson-img {
+        border-radius: 6.5rem;
+    }
+
+    /*MAIN*/
+
+    .main-container {
+        background-color: var(--primary);
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
+    }
+
+    /*ACCORDION*/
+
+    .accordion {
+        border: 1px solid var(--primary);
+        border-radius: 1rem;
+      }
+      
+    .accordion-item {
+        border-bottom: 1px solid var(--primary);
+        border-radius: 1rem;
+        background-color: var(--primary);
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
+    }
+
+    .accordion-title {
+        cursor: pointer;
+        background-color: var(--accent);
+    }
+
+    /* CARD*/
+
+    .card-item {
+        background-color: var(--accent);
+        border-radius: 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.5) 0px -10px 0px inset;
+    }
+
+ /*ID Styling*/
+
+#main-img {
+    border-radius: 20px;
+    height: 300px;
+    width: auto;
+}
+
+#EIA-img {
+    height: 300px;
+    width: auto;
+}
+

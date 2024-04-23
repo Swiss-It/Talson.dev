@@ -1,0 +1,312 @@
+/* layout.css */
+
+/*Spacing, Margins, Padding, Display, and Responsive styling w/ Media Queries*/
+/*Initial is Mobile Responsive(≤745px)*/
+
+/* Grid Layout */
+
+
+
+/* Flex Layout */
+
+    /* General */
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+
+    p {
+        margin: 1rem;
+    }
+
+    ul {
+        padding: 2rem;
+    }
+
+    /* Semantic */
+
+    header {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+    }
+
+    nav {
+        margin-top: 4rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        transition: 1s;
+    }
+
+    main {
+        padding: 1rem;
+
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    section {
+        margin: 12rem 0;
+    }
+
+    aside {
+        padding: 2rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    figure {
+        margin: 4rem 0;
+        text-align: center;
+    }
+
+    /* Elements */
+
+    img {
+        height: 100%;
+        width: auto;
+    }
+
+    /* Classes */
+
+    /*HEADER*/
+
+    .fixed-container {
+        position: fixed;
+        width: 100%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        padding: .5rem;
+
+    }
+
+    .material-symbols-outlined {
+        padding-right: .25rem;
+        cursor: default;
+    }
+
+    .nav-buttons {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;
+
+    }
+
+    /*HERO*/
+
+    .hero-container {
+        margin-top: 5rem;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .hero-content {
+        margin-top: 5rem;
+    }
+
+    .crop-container {
+        height: 13rem;
+        width: 13rem;
+    }
+
+    /*MAIN*/
+
+    .main-container {
+        padding: 2rem 0;
+    }
+
+    .youtube-video {
+        aspect-ratio: 16/9;
+        width: 90%;
+    }
+
+    /*ACCORDION*/
+          
+    .accordion-title {
+        display: flex;
+        padding: 1rem;
+        position: relative;
+        transition: background-color 0.5s;
+    }
+    
+    .icon {
+        position: absolute;
+        right: 10px;
+        transition: transform 0.5s;
+    }
+    
+    .accordion-content {
+        padding: 10px;
+        display: none;
+        transition: max-height 0.5s;
+        overflow: hidden;
+        text-align: left;
+        max-height: 0;
+    }
+    
+    .accordion-content.show {
+        display: block;
+        text-align: left;
+        max-height: 1000px;
+    }
+
+    /*CARDS*/
+
+    .card-container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card-item {
+        margin: 1rem;
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .card-content {
+        padding-top: 20px;
+    }
+
+    .card-img {
+        padding-top: 10px;
+    }
+
+
+    /* IDs */
+
+    #fixed-left {
+        display: flex;
+        align-items: center;
+    }
+
+    #fixed-right-mobile {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    #nav-buttons {
+        gap: 20px;
+    }
+
+    #github {
+        height: 28px;
+    }
+
+    #linkedin {
+        height: 28px;
+    }
+
+    #dribbble {
+        height: 28px;
+    }
+
+    #nav-logo {
+        max-width: 9vh;
+        width: auto;
+    }
+
+/* Responsive Reset*/
+
+.desktop {
+    display: none;
+}
+
+
+/* Responsive Queries*/
+
+    /*Tablet*/
+
+    @media screen {
+        /* Classes */
+
+        /* IDs */
+    }
+
+
+    /*Desktop*/
+
+    @media only screen and (min-width: 1200px) {
+
+        main {
+            width: 1000px;
+            margin: 0 auto;
+        }
+
+        br {
+            display: none;
+        }
+
+        /* Classes */
+
+        .mobile {
+            display: none;
+        }
+
+        .desktop {
+            display: block;
+        }
+
+        /*CARDS*/
+
+    .card-container {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    .card-item {
+        margin: 1rem;
+        padding: 2rem;
+        width: 90%;
+    }
+
+    .card-content {
+        padding-top: 20px;
+    }
+
+        /* IDs */
+
+        #fixed-right-mobile {
+            display: none;
+        }
+
+        #fixed-right-desktop {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+    }
+
+    /* Tiny */
+
+    @media screen {
+
+        /* Classes */
+
+        /* IDs */
+        
+    }
+
+

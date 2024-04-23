@@ -3,31 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <title>Brand Standards</title>
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins">
+    <link rel="stylesheet"  href="./styles/reset.css">
+    <link rel="stylesheet"  href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/animation.css">
+    <script src="./scripts/script.js"></script>
+
+    <!--CDN Links-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <title>Brands</title>
 </head>
-<body>
+
+<body class="brands">
     <header>
-        <nav>
-            <div>
-                <img src="" alt="">
-            </div>
-        </nav>
-    </header>
+        <!--FIXED-->
+            <summary class="fixed-container">
+                <div id="fixed-left">
+                    <a id="email-btn" href='mailt&#111;&#58;%6E&#101;&#117;f&#101;ld&#46;%7&#52;&#97;ls&#111;%&#54;E&#37;40&#103;ma%69l&#46;co&#109;'>neuf&#101;ld&#46;t&#97;&#108;so&#110;&#64;gmail&#46;&#99;om</a>
+                </div>
+                <div class="mobile" id="fixed-right-mobile">
+                    <a href="https://github.com/Swiss-It"><img id="github" src="./assets/github-mark-white.svg" alt="github logo"></a>
+                    /
+                    <a href=""><img id="linkedin" src="./assets/In-White-48px-R.png" alt="linkedin logo"></a>
+                    /
+                    <a href=""><img id="dribbble" src="./assets/logo.svg" alt="dribbble logo"></a>
+                </div>
+                <div class="desktop" id="fixed-right-desktop">
+                        <a href="https://github.com/Swiss-It">Github</a>
+                        /
+                        <a href="">LinkedIn</a>
+                        /
+                        <a href="">Dribbble</a>
+                </div>
+            </summary>
+        
+        <!--NAV-->
+            <nav id="top">
+                <div class="nav-title">
+                    <img id="nav-logo" src="./assets/Talson-Web-Logo.webp" alt="TALSON Logo">
+                </div>
+                <div class="nav-buttons">
+                    <ul id="nav-buttons">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a id="alert" href="">Media</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
     <main>
-        <div>
-            <h1>
-                <p></p>
-            </h1>
-        </div>
-        <div>
-            <h1>
-                <p></p>
-            </h1>
-        </div>
+        <section>
+            <div class="card-container">
+                <div class="card-item">
+                    <img class="card-img" src="./assets/Safari Biblico (main).png" alt="image">
+                    <div class="card-content">
+                        <a href="https://biblesafari.weebly.com/">
+                            <p>Bible Safari</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img class="card-img" src="./assets/WaleWare logo.webp" alt="image">
+                    <div class="card-content">
+                        <a href="https://swiss-it.github.io/cprg-218-assignment-2/">
+                            <p>WaleWare</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-item">
+                    <img class="card-img" src="./assets/Visual Aids-01.png" alt="image">
+                    <div class="card-content">
+                        <a href="https://www.twitch.tv/swissit_">
+                            <p>IDD Sports</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
+    <footer>
+        <p>&copy; <span id="copyright-year"></span> talson.dev</p>
+    </footer>
     
 </body>
-</html>

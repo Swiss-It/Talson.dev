@@ -1,0 +1,71 @@
+/* fonts.css */
+
+/*Styling for fonts and icons*/
+
+/* General */
+
+body {
+    font-family: var(--font-main);
+    color: var(--text);
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
+    font-size: 280%;
+    color: var(--text);
+    text-align: center;
+}
+
+h3 {
+    font-size: 200%;
+    color: var(--text);
+}
+
+p {
+    font-size: 140%;
+    text-align: center;
+}
+
+a {
+    font-size: 140%;
+    color: var(--text);
+}
+
+/*Class Styling*/
+
+.icon {
+    font-size: 200%;
+}
+
+/*ID Styling*/
+
+#email-btn {
+    font-size: 18px;
+}
+
+#fixed-right-mobile {
+    font-size: 18px;
+}
+
+#dribbble {
+    filter: invert(100%) sepia(96%) saturate(2%) hue-rotate(145deg) brightness(111%) contrast(101%);
+}
+
+
+/* Media Quieries */
+
+    /* Desktop */
+    @media only screen and (min-width: 1200px) {
+
+        #email-btn {
+            font-size: 24px;   
+        }
+
+        #fixed-right-desktop {
+            font-size: 18px;
+        }
+        
+    }

@@ -1,0 +1,26 @@
+ header {
+    transition: opacity 2s;
+ }
+
+ .card-container:hover {
+    height: 110%;
+ }
+
+ /* .animation {
+    animation-timeline: view();
+  
+    animation-name: appear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+      transform: scaleY(20);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scaleY(0);
+    }
+  } */
