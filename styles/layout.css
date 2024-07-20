@@ -101,6 +101,11 @@
         cursor: default;
     }
 
+    .nav-title {
+        max-width: 9vh;
+        width: 100%;
+    }
+
     .nav-buttons {
         display: flex;
         flex-flow: row;
@@ -221,8 +226,7 @@
     }
 
     #nav-logo {
-        max-width: 9vh;
-        width: auto;
+        width: 100%;
     }
 
 /* Responsive Reset*/
