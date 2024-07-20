@@ -221,8 +221,8 @@
     }
 
     #nav-logo {
-        max-width: 9vh;
-        width: auto;
+        max-width: 6rem;
+        width: 100%;
     }
 
 /* Responsive Reset*/
